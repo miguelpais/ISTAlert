@@ -1,13 +1,13 @@
-The final result of this script can be seen at "()the ISTAlert Twitter profile()":http://twitter.com/istalert
+The final result of this script can be seen at "the ISTAlert Twitter profile()":http://twitter.com/istalert
 
 The aim of this script is to provide fast notifications on some rss feeds (stored on the same domain) to twitter. The update will consist of an indication of which feed was updated, the title of the post, a tiny link to the original post (on version 2) and the content that will fit the available space left.
 
-The code is not very well commented but there is a "()blog post about version 1 of the script at my website()":http://miguelpais.com/site/view/35
+The code is not very well commented but there is a "blog post about version 1 of the script at my website()":http://miguelpais.com/site/view/35
 
 
 The two .rb files in this repository represent the two versions of this script.
 The first version used an XML parser to grab the last changes (didn't thought of the rss gem).
-Version 2 uses regular expressions and also connects to "()Sapo Puny":http://puny.sapo.pt to compress the original link of the post.
+Version 2 uses regular expressions and also connects to "Sapo Puny":http://puny.sapo.pt to compress the original link of the post.
 
 The script is intended to be run periodically at given intervals (with crontab), and stores the data at text files that, at each run, it matches against the current feed data to see if there has been any changes.
 
